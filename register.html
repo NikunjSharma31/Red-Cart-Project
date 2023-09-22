@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="register.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <div class="container">
         <div class="register-box">
@@ -26,6 +28,10 @@
                     <input type="email" id="email" name="email" required>
                 </div>
                 <div class="input-container">
+                    <label for="birthdate">Date of Birth:</label>
+                    <input type="date" id="birthdate" name="birthdate" required>
+                </div>
+                <div class="input-container">
                     <label for="password">Password:</label>
                     <input type="password" id="password" name="password" required>
                 </div>
@@ -33,10 +39,13 @@
                     <label for="confirmPassword">Confirm Password:</label>
                     <input type="password" id="confirmPassword" name="confirmPassword" required>
                 </div>
-                <!-- <div class="input-container">
-                    <label for="birthdate">Date of Birth:</label>
-                    <input type="date" id="birthdate" name="birthdate" required>
-                </div> -->
+                <div class="upload-container">
+                    <input type="file" id="file-input" accept="image/*">
+                    <div class="image-preview">
+                        <img src="#" id="preview-image" alt="Preview">
+                    </div>
+                </div>
+
                 <!-- <div class="input-container">
                     <label for="gender">Gender:</label>
                     <select id="gender" name="gender" required>
@@ -59,4 +68,5 @@
 
     <script src="register.js"></script>
 </body>
+
 </html>
